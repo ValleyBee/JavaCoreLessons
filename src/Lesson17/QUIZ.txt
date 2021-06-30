@@ -1,0 +1,21 @@
+Test1
+Which assignment are not correct ?
+C,E,F
+
+A. int [][] array1 = new int[10][];
+B. Car[][][] arra2 = new Car[1][][7]; corect but not make sense
+C. String array3 = new array3[9]; not correct because with allocation must be datatype 
+D. java.lang.String[] array4 [] = new java.lang.String[5][];
+E. int [][] array5 = new int[];   not correct fisrt 2D then 1D but even  [][] here must be number of elements
+F. int [][] array6 = new int[][]; not correct becase of double Allocation
+
+
+Test2
+Whic assignment are correct ?
+A,B,C
+
+A. int array1[] = {3,5,6,0}; OK
+B. int [] array2 = new int[1]; OK 
+C. int [] array3 = new int[] {}; OK assigned zero element[] and zero {} it is ok.
+D. int [] array4 = new int[2] {}; Not ok.assigned element[2] and zero {} not ok.
+E. int array5 [] = new int[3]  {0,1,2}; Not ok. double assigned length [3] {1,2,3}

@@ -1,0 +1,33 @@
+how array looks in JAVA
+
+1D demension array
+String [] array {"privet","ok","poka"}
+
+
+
+2D demension array 2D must have atleast two elements {1},{2}
+here example of 3 elements:
+int [][] array {  {0,1,5} , {-7,3,3} }   
+elements of 2D array are elements of 1D array
+0  1  5  1st element
+-7  3 3  2nd element
+
+int[0][2] output 5
+
+
+3D demension array 3D must have atleast three elements {1},{2},{3}
+cahr [][][] array
+elements of 3D array are elemts of 2Darray
+{ {2Delemnts},{2D},{2D} }
+
+this is example 3D which included two 2D array
+         1D        1D        1D           1D        1D       1D
+index   0, 1		0 , 1		 0 ,1	     	idx  0 ,1    0 , 1     0 , 1   
+{ {   {'a','b'},{'c','e'},{'f','g'}  ,  {'j','k'},{'l','m'},{'n','g'}   } }
+index    0          1        2       idx    0        1         2
+      index 0 1st of 2D 								index	1	2nd of 2D 
+
+1 first index[1][][] means which exactly 2D array, 				= 1st {j,k},{l,m},{n,g}
+2 second index[1][1][] means which elemen in 1st 2D array 		   	= 2nd {l,m}
+3 third index [1][1][1] means which elemen in 1st 2D array in 2nd element = {m}
+char[1][1][1] output 'm'

@@ -7,7 +7,7 @@
 //5.Non static blocks and varaibles Child class
 //6.Constructor Child class
 
-// 3 and 6 executs only during creating new Object aaaa
+// 3 and 6 executs only during creating new Object 
 package Lesson26;
 
 public class Test5 {

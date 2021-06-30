@@ -22,7 +22,7 @@ public class Test4 {
 		}
 		System.out.println();
 		int index2 = Arrays.binarySearch(array1, -3); // return index of arg
-		// binary search works correctly only with sorted array
+		// binary search search correctly only with sorted array
 		System.out.println(index2); // sorted. output for(-3) is 0, correct.
 
 		index2 = Arrays.binarySearch(array1, 3);

@@ -33,7 +33,7 @@ public class Test1 {
 		array2[2] = "make";
 
 		// CREATING ARRAY, MIXED or all in one. Decl.Allo.Init.
-		int[] array5 = new int[5]; // mixed, creating Declaration and Allocation.
+		int[] array5 = new int[7]; // mixed, creating Declaration and Allocation.
 
 		int[] array6; // Dec. then need Aloc and Init
 		array6 = new int[] { 4, 5, 6 }; // This Aloc and Init.
@@ -110,6 +110,9 @@ public class Test1 {
 		// 2ns row, 2 ap.
 		// 3rd row, 7 ap.
 		int[][] array5 = { { 1, 2, 4, 4, 5 }, { 1, 2 }, { 7, 6, 5, 4, 3, 2, 1 } };
+
+
+
 
 	}
 

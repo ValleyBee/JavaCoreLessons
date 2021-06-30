@@ -1,0 +1,10 @@
+Methods finding maxMin arg of arrray
+
+#1 Simple, finding min, max arg but array has to be sorted alaready.
+
+For-Each loop
+#2 finding min, max arg without sorting by using For-each loop
+
+For loop
+#3 finding min, max arg without sorting by using For-loop
+in #3 we can start from (i=1) because we already assign min max [0]

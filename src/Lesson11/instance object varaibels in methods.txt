@@ -1,0 +1,1 @@
+Example how to use instance object varaibels in methods and that methods can be used in deferent classes
