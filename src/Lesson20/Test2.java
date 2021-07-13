@@ -1,4 +1,5 @@
-// ArrayList everything about it here!
+// ArrayList everything about it
+// methods .add .get .remove .append .clear
 package Lesson20;
 
 import java.util.ArrayList;
@@ -11,12 +12,12 @@ public class Test2 {
 		list.add("second");
 		list.add("third");
 		list.add(0, "zero");// add arg "" to 0 index
-		list.set(1, "setted!"); // same as replace
+		list.set(1, "setted!"); //works as replace
 
-		list.remove(new String("third")); // method remove, removes element from all objects even just created and from
-		// arrayslist.because method use equals for searching elements
+		list.remove(new String("third")); // method remove, removes element from all objects
+		// even just created and from arrayslist because it use method equals for searching elements
 
-		for (int i = 0; i < list.size(); i++) {
+		for (int i = 0; i < list.size(); i++) {  // ArrayList.size not .length
 			System.out.print(" " + list.get(i)); // returns arg of index
 		}
 		System.out.println();
@@ -37,8 +38,8 @@ public class Test2 {
 			System.out.print(" " + list2.get(i));
 		}
 		System.out.println();
-		System.out.print("removing whole Object,output without sb1 -> ");
-		list2.remove(sb1); // remove use name or index, name elements or objects
+		System.out.print("removing whole object,output without sb1 -> ");
+		list2.remove(sb1); // remove by name or index, name elements or objects
 		// remove by object returns boolean;
 
 		for (int i = 0; i < list2.size(); i++) {

@@ -1,17 +1,5 @@
-// Inheritance classes 
-// Parent classes also named (Base class,Super class)
-// Extends classes also named (Derived
-// classes,Subclasses,Child classes)
+// # Inheritance classes 
 
-//Relationship of classes 
-// "Is-a" and "Has a"
-
-// Here we have exp: relationship of classes "Is-a"
-// it meens Doctors is a Employee
-
-// Employee class(parent)
-// Doctors class (Child of Employee)  
-// Surgeons class (sublass of Doctors)
 
 package Lesson22;
 

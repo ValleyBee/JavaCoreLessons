@@ -1,0 +1,34 @@
+#Examples here and Lesson22.P1.Test3
+ 
+EmployeeTest has Examples of methods with modifiers:
+	PUBLIC
+	Protected
+	Default
+	Private
+1.Public - methods Inheritance everywhere.
+2.Proctected - Inheretince within package and outside only in child classes by object child class.
+3.Default - methods Inheritance only within package.
+4.Private - method seeN onlY within its class
+
+
+#Sub classes
+Doctor
+Driver
+Surgeons
+
+#Procected Method Override
+Override protected method relax2() Superclass EmployeeTest.
+access modifier must be same or less restricted. public or protected. 
+
+#Accessablitily Procected method relax2()	of SuperClass from outside:
+
+Not accessable by Object of Superclass
+EmployeeTest emp = new EmployeeTest();
+emp.relax2(); no seen
+
+Accessable only by Object ChildSlass Driver
+Driver2 dr = new Driver2();
+dr.relax2();  seen
+
+
+

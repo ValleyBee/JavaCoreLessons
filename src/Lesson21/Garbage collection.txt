@@ -1,0 +1,20 @@
+#Garbige collector will only consider to erase eligible objects:
+	String s = "asd";
+	s = null;  s eligible to erase.
+	s = new String("sss"); refer to a new object old object became unreachable then s bacame eligible to erase.
+
+
+#Method
+Garbage collection. Methods System.gc(), finalize()
+realy even you call these Methods nothing immediately hapen, Garbage Col.consider by itself when erase.
+
+
+
+Public static void main(String [] arg) {
+	String s1,s2;							STEP BY STEP					
+	s1 = new String ("prvet");    s1 -> "privet"
+	s2 = new String ("pola");     s2 -> "poka"
+	s1 = s2;  					now   s1 -> "poka" (but s1 -> "privet" link deleted) object became eligible to
+	String s3 = s1;					s3 -> "poka"
+	s1 = null;							s1 -> null  (no link at all)
+}  here finish Method main '}'  it means everything can became eligible for GC

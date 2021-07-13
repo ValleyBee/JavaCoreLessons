@@ -1,0 +1,14 @@
+# methods .add .get .remove .append .clear .set
+
+	methods 
+	.add returns > boolean
+	.get,.set > DataType
+	.remove by object > boolean
+	.remove by index > DataType
+	.addAll ArrayList name > boolean
+	.addAll index,ArraList name > boolean
+
+
+ArrayList.size not .length
+
+#method .remove,  removes whole element after that the size of the array also changed. 

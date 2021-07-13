@@ -6,6 +6,7 @@ public class Test5 {
 
 	public static void main(String[] args) {
 
+						
 		String sb1 = new String("first word1");
 		String sb2 = new String("second word2");
 		String sb3 = new String("third word3");

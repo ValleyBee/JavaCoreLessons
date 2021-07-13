@@ -1,34 +1,15 @@
 // Ternary operator,overveiw last Lessons
 package Lesson21;
 
-// impor java.*; no errors but it doesn't import anything
-
-// EX. I - Not allowed import.
-// error, Java doesn't know from where to call class A, p1 or p2 ??
-// import package p1.A; // import Class A
-// import package p2.A; // import Class A
-
-// EX. II - Import allowed but confuse compilator.
-// import package p1.*; // import all Classes
-// import package p2.*; // import all Classes
-// A n = new A(); // error, need use full names p2.A
-
-// EX. III - Import allowed no errors but not good practice.
-// import package p1.*; // import all Classes
-// import package p2.A; // import Classe A
-// A n = new A(); // no error, Java will call p2.A
-
-// EX. IV - Import allowed, no errors ,good practice.
-// import package p1.*; // import all Classes
-// import package p2.*; // import all Classes
-// p2.A n = new p2.A();
-
 public class Test1 {
 	public static void main(String[] args) {
 		int a = 5;
 		int b = 5;
+// #Ternary operator
 		int c = (a < 7) ? a++ : b++;
 		System.out.println("a=" + a + " b=" + b);
+
+		System.out.println(a < 4 ? 11 : "privet");
 
 		// Garbige collector will only consider to erase eligible objects:
 		String s = "asd";

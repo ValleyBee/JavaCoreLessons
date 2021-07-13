@@ -1,6 +1,9 @@
-// Incapsulation methods, we secure our database.not allowed direct access to var
+// Encapsulation methods, we secure our database.not allowed direct access to varaibles
 package Lesson22;
 
+//# Example Encapsulation:
+// hiding some varaibles from access from outside
+// use private access modifier for data to which we don't want to be accessed from outside classes.
 public class Human {
 
 	final String sex;
@@ -10,6 +13,7 @@ public class Human {
 	private int weith;
 	private boolean smart;
 
+	// use Constructor to assign final constant varaibles
 	public Human(String sex) {
 		this.sex = sex;
 		System.out.println(sex);
@@ -32,11 +36,11 @@ public class Human {
 	}
 
 	public StringBuilder getSurname() {
-		// this code make copy of object var and secure it to
-		// prevent to change surname.
-		// StringBuilder sb = new StringBuilder(surname);
-		// return sb;
-		return surname;
+		// #this method make copy of object var and secure it
+		// #use this code instead:
+			 StringBuilder sb = new StringBuilder(surname);
+			 return sb; // returns copy var surname
+		//return surname;
 	}
 
 	public void setSurname(StringBuilder sn) {
@@ -86,10 +90,10 @@ class Test {
 		System.out.println(h.getWeith());
 		System.out.println(h.isSmart());
 
-		// method append (StringBuilder) can change var surname
-		// it isn't good for security
+		// # StringBuilder create Mutable Objects it has method append it can change var
+		//  it isn't good for security.
 		// to secure it we need make copy of object surname
-		// go to method getSurname to see how
+		// go to method getSurname to see an example. 
 		h.getSurname().append("xaxaxa"); // output changed surname;
 
 		System.out.println(h.getSurname());

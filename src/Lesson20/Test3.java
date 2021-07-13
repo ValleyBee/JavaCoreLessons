@@ -18,14 +18,14 @@ public class Test3 {
 		list2.add(new String("third word3"));
 
 		// "first word1" not found
-		// because method equals not work for StringBuilder.
+		// #equals StringBuilder compers refers  to the objects
 		// cause, in StringBuilder it compers object but not elements
 		System.out.println(list.indexOf(new StringBuilder("first word1")));
 		System.out.println(list.indexOf("first word1"));
 		// output -1 not found
 
 		// "first word1" found
-		// because method equals works correctly for String
+		// #equals String compers elements of the objects
 		System.out.println(list2.indexOf(new String("first word1")));
 		System.out.println(list2.indexOf("first word1"));
 		// output 0, string found in index 0

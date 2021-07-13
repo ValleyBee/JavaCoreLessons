@@ -1,0 +1,42 @@
+#Example CONSTRUCTORS:
+#Child class before run its own constructor always call constructor Parent class first, run it until finineshed then back. 
+
+#Keyword: This() 
+	-means first go to my Overloaded constructor first with arg.
+
+ class Human3 { 
+
+	Human3(String n) {
+		this(n, null);  this(n,null) -> to Overloaded constructor.
+		System.out.println("Hello I");}
+
+	OVERLOADED CONSTRUCTOR:
+		Human3(String n, String s) { 
+	   System.out.println("Hello II");}
+
+
+#Keyword: Super() 
+	-super must be at the first line
+	-super()) and this() can't be used together but super() and this.varaible can be.
+	-we use if we need go to construntor Superclass with arg.
+	-anyway even without super() child class always call consrt. Superclass without arg. 
+
+	 class TestHuman extends Human3 {
+	
+		TestHuman(int i) {
+		super("name Jonh"); -> to contructor SuperClass with String n,
+		System.out.println("Hello III");	}  
+
+
+
+TestHuman th = new TestHuman(7);
+output:
+1.Hello II
+2.Hello I
+3.Hello III
+
+Human3 h = new Human("name Igor");
+output:
+1.Hello II
+2.Hello I
+

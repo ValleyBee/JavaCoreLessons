@@ -1,0 +1,54 @@
+# TEST 1
+output ?
+3
+6
+9
+
+nested ternary, how to find out ? 
+need to followe the TRUE
+int a = 7
+(a > 2 ? a < 5 ? 3:6:9)  
+
+if a > 2 TRUE then proceed further ->  a < 5 ? 3:6 -> output 6
+if a > 2 FALSE then output 9
+
+
+# TEST 2
+there three Objects were created.
+At which lines the Objects of reference varaible car1,car2,car3,car4 became eligable for GC ?
+
+
+1. public class Car{ 
+2. public static void main(String [] arg) {
+3. Car car1 = new Car(); 	 (car1) at line 8 = null
+4. Car car2 = new Car();    (car2) at line 9 = null
+5. Car car3 = car1;
+6. car1 = null;					
+7. Car car4 = car1;				
+8. car3 = null; 			<-					
+9. car2 = null; 			<-					
+10. car2 = new Car();			
+11. System.gc();
+12. }						 	<-	everything else at line 12 = end method main
+13. }
+
+
+
+№ TEST 3 
+What output of this code ?
+at line 7 starts Recursive.
+
+By ctreating an object Employee() at line 7 we go to Constructor of Class and inside 
+class line 2 has code to create again new Object of Employee and so on. 
+
+
+1. class Employee {
+2.  Employee manager = new Employee();
+3. }
+4. class TestEmployee{
+5. 	public static void main(String [] arg){
+6. 	 	Employee e = null;
+7.	 		e = new Employee();
+8.			e = null;
+9.	 }
+10. }

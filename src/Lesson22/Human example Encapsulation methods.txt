@@ -1,0 +1,28 @@
+methods
+get
+set
+
+#Example 1.Encapsulation:
+ hiding some varaibles from access from outside
+ use private access modifier for data to which we don't want to be accessed from outside classes.
+
+ #StringBuilder create Mutable Objects
+The mutable objects are objects whose value can be changed after initialization. 
+StringBuilder has method append it can change var. 
+ 
+ h.getSurname().append("xaxaxa"); // output changed surname;
+ 
+ it isn't good for security to secure it we need make copy of object:
+	instead of use code:
+
+	 public StringBuilder getSurname() {
+	 	return surname;
+		}
+
+use this code to make a copy of varaible:
+
+		public StringBuilder getSurname() {
+		  StringBuilder sb = new StringBuilder(surname);
+	     return sb;
+		}
+ 

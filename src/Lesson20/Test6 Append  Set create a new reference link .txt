@@ -1,0 +1,2 @@
+# METHOD APPEND() Change element inside array in original list1 and cloned list2
+/# METHOS SET()  Doesn't change array but creating a new object"DD"

@@ -1,0 +1,19 @@
+#Ternary operator booleanExpresion ? expresion1 : expresion2
+	int a = 5;
+	int b = 5;
+	int c = (a < 7) ? a++ : b++;
+output a=6 b=5
+returns can be any DataType in expresion1,2
+	System.out.println(a < 4 ? 11 : "privet");
+output Privet
+
+
+
+
+
+
+
+
+
+
+

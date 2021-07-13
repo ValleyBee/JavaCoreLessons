@@ -1,0 +1,1 @@
+Examp. use Encapsulation methods to access data from Lesson22.Human

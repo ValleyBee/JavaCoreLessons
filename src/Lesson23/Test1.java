@@ -21,6 +21,7 @@ public class Test1 {
 		emp2.eat(); // runtime binding calls method eat() Output "eating Doctor"
 		Doctor doc2 = new Surgeon();// var doc2 refers to (Surgeon class)
 		doc2.eat();// runtime binding calls method eat() Output "eating Surgeon"
+		
 
 		// emp1.relax(); // OVERLOADED METHOD class Employee
 		// doc.relax(null); // OVERLOADED METHOD CLass Doctor

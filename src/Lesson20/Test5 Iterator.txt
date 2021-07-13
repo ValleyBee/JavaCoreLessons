@@ -1,0 +1,12 @@
+# Iterrator  works as traditional for-loop 
+	Iterator<String> it = list.iterator();
+	while (it.hasNext()) {
+		System.out.print(it.next());
+	}
+
+# difference with for-each loop with Iterator we can delete element
+	Iterator<String> it = list.iterator();
+	while (it.hasNext()) {
+		it.next();
+		it.remove();
+	}

@@ -1,0 +1,38 @@
+For what use Inheritance:
+1. Shorter code classes
+2. Less to wright changings in code only for parent class
+3. Easy to test classes
+4.Gruping classes under parent type class ( Doctor and Driver are type Employee )
+4. Extensibility it is,
+   Example:
+ 	when Child extends Parent class, we can ctreate method or var with datatype as Parent class or any subclass of 
+	 	public class Test1 {
+  			public static void payrise(Employee e) {
+				e.wage = e.wage + 100; }}
+
+}}
+
+
+
+
+
+# Inheritance of classes 
+	Parent classes also has names ((Base class,Super class)
+	Extends classes also has names (Derived classes,Subclasses,Child classes)
+
+# Relationship of classes 
+	"Is-a" and "Has a"
+ Example: relationship Is-a"  Doctors is an Employee
+ Example: relationship Has-a" Houuse has a Window
+
+
+ Employee class(parent)
+ Doctors class (Child of Employee)  
+ Surgeons class (sublass of Doctors)
+
+
+
+ 
+ 
+ 
+ 

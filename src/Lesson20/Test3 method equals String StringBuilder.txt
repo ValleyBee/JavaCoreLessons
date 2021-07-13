@@ -1,0 +1,16 @@
+	
+#StringBuilder
+#equals StringBuilder compers refers to the objects and refers allways are different
+	System.out.println(list.indexOf(new StringBuilder("first word1")));
+	System.out.println(list.indexOf("first word1"));
+"first word1" not found
+
+cause, in StringBuilder it compers object but not elements
+output -1 not found
+
+#String
+#equals String compers elements of the objects
+	System.out.println(list2.indexOf(new String("first word1")));
+	System.out.println(list2.indexOf("first word1"));
+"first word1" found
+output 0, string found in index 0 

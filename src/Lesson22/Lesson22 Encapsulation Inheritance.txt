@@ -1,0 +1,8 @@
+Three Principal Aspects of OOP Object Oriented Programming
+
+1. Encapsulation(hiding Data)
+2. Inheritance(legacy)
+3. Polymorphism
+
+
+1. Encapsulation(hiding Data) Hiding internal data from the outside accessing it. Put it into a capsul, isolation it.

@@ -112,8 +112,11 @@ public class Test1 {
 		int[][] array5 = { { 1, 2, 4, 4, 5 }, { 1, 2 }, { 7, 6, 5, 4, 3, 2, 1 } };
 
 
-
-
+//#Example creating array with ouput arg
+System.out.println();
+int i = 2;
+String s = new String [] {"a","b","c","d","e"} [i]; // output "c", element of index [i]
+System.out.println(s);
 	}
 
 }

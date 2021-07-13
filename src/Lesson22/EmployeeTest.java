@@ -1,10 +1,12 @@
-// Examples. Protected access modifier
-// file Test3 is a child, Employee Surepclass 
+//#Examples. access modifiers
+	//here and Lesson22.P1.Test3
+	//file Test3 is a child, EmployeeTest Surepclass 
 package Lesson22;
 
 public class EmployeeTest {
+	
 
-	protected String name2;
+	protected String name2 = ("EmployeeTest var name2");
 	protected int age2;
 	protected int wage2 = 100;
 
@@ -17,7 +19,7 @@ public class EmployeeTest {
 
 	// PROTECTED
 	protected void relax2() {
-		System.out.println("relaxing time2");
+		System.out.println("relaxing time2 from EmployeeTest");
 	}
 
 	// DEFAULT
@@ -25,33 +27,48 @@ public class EmployeeTest {
 		System.out.println("sleeping time2");
 	}
 
-	// Incapsulation method gets data from Child class from not Parent package.
+	// PRIVATE
+	private void relax3() {
+		System.out.println("relaxing for V.I.P. people");
+	}
+
+	// Encapsulation method gets data from Child class from not Parent package.
 	protected void getDoctors() {
 		Doctors2 doc = new Doctors2();
 		doc.treat2();
 	}
 
+ 
+
 	public static void main(String[] args) {
-		// Class Doctors is a child
+//# Class Doctors is a child
 		// has access to protected var and method.
 		Doctors2 doc2 = new Doctors2();
 		doc2.name2 = "Korolkov Alexandr";
 		System.out.println(doc2.name2);
 		System.out.println(" EXAMPLE I.to Parent from child");
 		doc2.treat2();
+		
 
 		System.out.println("EXAMPLE II to Child from Subclass");
 		Surgeons2 sur2 = new Surgeons2();
 		sur2.improvSkill(doc2);
 		System.out.println();
-		// Class Drive is not a child
-		// has no access to protected var and mathod.
+//# Class Drive is not a child
+		// has no access to protected var and method.
 		System.out.println("EXAMPLE III");
 		Driver2 dr = new Driver2();
 		dr.drive2(); // method form Drive class. access ok.
 		// dr.name = "Teacherkov Maxim"; // (String name) prorected. no access
-		// dr2.relax2(); // method protected. no access.
-
+//# Private method relax3()
+		EmployeeTest emp = new EmployeeTest();
+		emp.relax3();
+//# Procected method relax2()	
+		// no access through Object child class
+		// dr2.relax2(); //no access method is protected. 
+			// EmployeeTest emp = new EmployeeTest();
+			//emp.relax3();
+		
 	}
 
 }
@@ -61,20 +78,32 @@ public class EmployeeTest {
 // classes,Subclasses,Child classes)
 
 class Doctors2 extends EmployeeTest {
+	
 	String skill = " Doctor skilled";
-
-	// for Child class no needed create (new Employee)
+		// for Child class no needed create (new Employee)
 	// to access any var and methods in Parent class
 	// name2,wage2,age2,eat2()
+	
 	void treat2() {
 		System.out.print("treating people2 + ");
 		System.out.print("Doctor: ");
-		eat2(); // public
-		relax2(); // protected
-		sleep2(); // default
 		System.out.println(name2 + " " + wage2 + " " + age2);
+		eat2(); // public
+		sleep2(); // default
+		relax2(); // protected @ Override method
 
+	
 	}
+	
+// # Override protected method relax2() Superclass EmployeeTest.
+//	access modifier must be same or less restricted. public or protected. 
+	@Override
+	protected void relax2(){
+		System.out.println("relaxing time2 from Doctor");
+	}
+
+
+
 }
 
 // ----- EXAMPLE II "Has-a"
@@ -101,3 +130,9 @@ class Driver2 {
 		dr2.eat2();
 	}
 }
+
+
+
+
+
+

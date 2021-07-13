@@ -1,0 +1,25 @@
+
+class Abc {
+
+	  If class doesn't have (public) access modifier(or has a default) then all vars inside this class does not have it too. Even you put public access before var like (public int a;)
+	  they have to have public access modifier both, class and vars.
+	  only in this case they can be called form the other packeges
+
+#EXample 1
+if Constructor or Class not seen in other packeges you can't create  Abc a = new Abc();  in 
+others packeges, because class or constructor have default access modifier
+	  class Abc{
+	  public int a =1;
+	  }
+#EX 2 seen in any packeges
+	 public class Abc{    - public access modifier
+	 public int a =1;
+	 }
+	
+#EX 3 compliler not allowed	
+constructor class Abc:
+	public Abc() {  error, Recursive construction Abc()
+		this(); here we call constructor again inside itself
+	}
+
+}
